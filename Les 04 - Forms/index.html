@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulier</title>
+</head>
+<body>
+    <h1>Stel uw vraag hier:</h1>
+    <form>
+        <form action="verzend.php" method="get">
+            <div>
+                <label for="Naam">Naam: <input type="text" name="Naam" id="Naam" raquired></label>
+            </div>
+            <div>
+                <label for="E-mail">Email: <input type="email" name="Email" id="Email" raquired></label>
+            </div>
+            <div>
+                <label for="Website">Website: <input type="url" name="Website" id="Website" raquired></label>
+            </div>
+            <div>
+                <label for="Reactie">Reactie: <textarea name="Reactie" id="Reactie" cols="30" rows="10"></textarea></label>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Geslacht</legend>
+                    <label for="Male">Male:<input type="radio" name="Geslacht" id="Male"></label>
+                    <label for="Female">Female:<input type="radio" name="Geslacht" id="Female"></label>
+                    <label for="Other">Other:<input type="radio" name="Geslacht" id="Other"></label>
+                </fieldset>
+            </div>
+            <div>
+                <label for="Checkbox">Hou me op de hoogte:<input type="checkbox" name="Checkbox" id="Checkbox"></label>
+            </div>
+            <div>
+                <input type="submit" value="Indienen">
+            </div>
+    </form>
+</body>
+</html>
