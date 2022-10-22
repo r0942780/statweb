@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    
+}
+
+.columnleft {
+    float: left;
+    width: 30%;
+    padding: 15px;
+    @media not|only mediatype and (expressions min/max)
+}
+
+.columnright {
+    float: left;
+    width: 70%;
+    padding: 15px;
+    @media not|only mediatype and (expressions min/max)
+}
