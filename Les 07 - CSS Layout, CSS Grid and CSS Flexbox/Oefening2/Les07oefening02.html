@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 07 oefening 02</title>
+
+    <style>
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.gridcontainer{
+    display: grid;
+    box-sizing: border-box;
+    border: 20px solid white;
+    font-size: large;
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+    grid-gap: 10px;
+    grid-template-areas: "header header" "aside main" "footer footer"; /* verdeelt de rijen en kolommen*/
+    grid-template-columns: 200px auto; /* bepaalt 2 kolommen*/
+    grid-template-rows: 250px auto 75px; /* bepaalt 3 rijen*/
+}
+
+.gridcontainer>* {
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content:center;
+    border-radius: 7px;
+    font-weight: 700;
+}
+
+.header{
+    grid-area: header;
+    background-color: cornflowerblue;
+    padding: 10px   
+}
+
+.aside{
+    grid-area: aside;
+    background-color: lightgreen;
+    padding: 10px
+}
+
+.main{
+    grid-area: main;
+    background-color: black;
+    padding: 10px
+}
+
+.footer{
+    grid-area: footer;
+    background-color: orange;
+    padding: 10px
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="gridcontainer"> 
+        <header class="header">Header</header>
+        <aside class="aside">Aside</aside>
+        <main class="main">Main</main>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
